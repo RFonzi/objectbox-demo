@@ -18,13 +18,11 @@ class ObjectboxMovieRepository(boxStore: BoxStore) : MovieRepository {
 
     private val movieBox = boxStore.boxFor(MovieEntity::class.java)
     private val actorBox = boxStore.boxFor(ActorEntity::class.java)
-
-    private val cache: LruCache<String, Flowable<MovieEntity>> = LruCache(10)
-
+    
     private val orderedByNameQuery = movieBox.query().order(MovieEntity_.name).build()
 
     override fun getMovies(): Flowable<MovieEntity> {
-        return cache.get("list") ?: fetchMovies()
+        return RxQuery.flowableOneByOne(orderedByNameQuery, BackpressureStrategy.BUFFER)
     }
 
     override fun getMovie(id: Long): Single<MovieEntity> {
@@ -41,11 +39,5 @@ class ObjectboxMovieRepository(boxStore: BoxStore) : MovieRepository {
         return RxQuery.flowableOneByOne(moviesWithActorQuery, BackpressureStrategy.BUFFER)
     }
 
-    private fun fetchMovies(): Flowable<MovieEntity> {
-        val flowable = RxQuery.flowableOneByOne(orderedByNameQuery, BackpressureStrategy.BUFFER).cache()
-        cache.put("list", flowable)
-
-        return flowable
-    }
 
 }
