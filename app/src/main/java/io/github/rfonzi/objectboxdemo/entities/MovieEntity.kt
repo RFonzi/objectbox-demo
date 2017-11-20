@@ -3,7 +3,6 @@ package io.github.rfonzi.objectboxdemo.entities
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
 import io.objectbox.relation.ToMany
-import io.objectbox.relation.ToOne
 
 /**
  * Created by ryan on 11/17/17.

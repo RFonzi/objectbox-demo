@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import io.github.rfonzi.objectboxdemo.R
-import io.github.rfonzi.objectboxdemo.entities.*
+import io.github.rfonzi.objectboxdemo.entities.ActorEntity
+import io.github.rfonzi.objectboxdemo.entities.Female
+import io.github.rfonzi.objectboxdemo.entities.Male
+import io.github.rfonzi.objectboxdemo.entities.Unknown
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
-import java.util.*
 
 /**
  * Created by ryan on 11/18/17.

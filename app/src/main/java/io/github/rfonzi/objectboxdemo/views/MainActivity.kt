@@ -1,12 +1,12 @@
 package io.github.rfonzi.objectboxdemo.views
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.support.v7.app.AppCompatActivity
 import android.widget.FrameLayout
 import io.github.rfonzi.objectboxdemo.R
-import io.github.rfonzi.objectboxdemo.views.movielist.MovieListFragment
 import io.github.rfonzi.objectboxdemo.views.actorlist.ActorListFragment
+import io.github.rfonzi.objectboxdemo.views.movielist.MovieListFragment
 
 class MainActivity : AppCompatActivity() {
 

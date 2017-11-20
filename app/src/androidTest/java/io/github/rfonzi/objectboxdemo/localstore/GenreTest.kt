@@ -5,8 +5,8 @@ import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
 import io.github.rfonzi.objectboxdemo.entities.GenreEntity
 import io.objectbox.Box
-import junit.framework.Assert
-import junit.framework.Assert.*
+import junit.framework.Assert.assertEquals
+import junit.framework.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

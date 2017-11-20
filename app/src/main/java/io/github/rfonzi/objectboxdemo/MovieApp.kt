@@ -4,7 +4,10 @@ import android.app.Application
 import android.util.Log
 import com.github.salomonbrys.kodein.*
 import com.github.salomonbrys.kodein.android.appKodein
-import io.github.rfonzi.objectboxdemo.entities.*
+import io.github.rfonzi.objectboxdemo.entities.ActorEntity
+import io.github.rfonzi.objectboxdemo.entities.GenreEntity
+import io.github.rfonzi.objectboxdemo.entities.MovieEntity
+import io.github.rfonzi.objectboxdemo.entities.MyObjectBox
 import io.github.rfonzi.objectboxdemo.repositories.ActorRepository
 import io.github.rfonzi.objectboxdemo.repositories.MovieRepository
 import io.github.rfonzi.objectboxdemo.repositories.objectbox.ObjectboxActorRepository

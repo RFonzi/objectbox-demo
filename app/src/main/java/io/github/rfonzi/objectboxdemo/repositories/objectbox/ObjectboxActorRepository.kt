@@ -1,11 +1,8 @@
 package io.github.rfonzi.objectboxdemo.repositories.objectbox
 
-import android.support.v4.util.LruCache
 import io.github.rfonzi.objectboxdemo.entities.ActorEntity
 import io.github.rfonzi.objectboxdemo.entities.ActorEntity_
-import io.github.rfonzi.objectboxdemo.entities.MovieEntity
 import io.github.rfonzi.objectboxdemo.repositories.ActorRepository
-import io.objectbox.Box
 import io.objectbox.BoxStore
 import io.objectbox.rx.RxQuery
 import io.reactivex.BackpressureStrategy

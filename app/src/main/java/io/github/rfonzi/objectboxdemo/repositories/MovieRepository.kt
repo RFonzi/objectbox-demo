@@ -2,7 +2,6 @@ package io.github.rfonzi.objectboxdemo.repositories
 
 import io.github.rfonzi.objectboxdemo.entities.MovieEntity
 import io.reactivex.Flowable
-import io.reactivex.Observable
 import io.reactivex.Single
 
 /**

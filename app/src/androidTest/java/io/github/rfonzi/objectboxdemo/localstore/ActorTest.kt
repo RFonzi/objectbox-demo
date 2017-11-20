@@ -2,15 +2,12 @@ package io.github.rfonzi.objectboxdemo.localstore
 
 import android.content.Context
 import android.support.test.InstrumentationRegistry
-import android.support.test.runner.AndroidJUnit4
 import io.github.rfonzi.objectboxdemo.entities.ActorEntity
 import io.github.rfonzi.objectboxdemo.entities.Female
 import io.objectbox.Box
-import junit.framework.Assert
 import junit.framework.Assert.*
 import org.junit.Before
 import org.junit.Test
-import org.junit.runner.RunWith
 
 /**
  * Created by ryan on 11/17/17.
